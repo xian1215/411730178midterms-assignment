@@ -1,0 +1,111 @@
+*{
+    /* border: solid 2px black; */
+    font-family: 微軟正黑體;
+    font-size: 14px;
+}
+html,body{
+    background-color: #ff7526;
+    display: flex;
+    justify-content: center;/*左右*/
+    align-items: center;/**/
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    margin: 0PX;
+}
+.box{
+    width: 380px;
+    background-color: #fff;
+    /*以下指令產生陰影,x位移,y位移,陰影範圍模糊度*/
+    box-shadow: 0px 0px 35px rgba(0,0,0,0.4) ;
+    transition: 0.2s;/*有動作的時候等待時間*/
+}
+/*hover為滑鼠滑入時,產生的格式*/
+.box:hover{
+    box-shadow: 5px 5px 60px rgba(0,0,0,1) ;
+    transform: translate(-5px,-5px);/*往左上角移*/
+}
+.top{
+    height:330px;
+    background-image:url(https://pic.pimg.tw/sidney6811/1529508979-1559019819_n.jpg);
+    background-size: cover;
+    position: relative;   /*讓框內的文字為相對位置,以top的位置當作相對點,按por*/
+  }
+  .top .name{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;/*字距*/
+    position: absolute;/*讓框內的文字為絕對位置*/
+    margin:0; /*沒輸入這行，會因為h3預設與下框有距離*/
+    left: 0px;/*離左邊距離*/
+    bottom: 0px;/*離下面距離*/
+    padding: 5px 15px;
+    letter-spacing: 2px; /*字間距離調大*/  
+    /* background-color: rgba(0,0,0,0.2);黑色有透明a是陰影 */
+    background: linear-gradient(transparent 0%,black 100%);/*從上而下漸層*/
+    width: 100%;
+    box-sizing: border-box;/*在區域內陰影*/
+    padding-top: 30px;
+  }
+  .top .name.smallText{
+    font-size: 10px;
+  }
+  .cirbutton{/*長方*/
+    width: 50px;
+    height: 50px;
+    background-color: #ff7526;
+    position: absolute;/*設定cirbutton的絕對位置*/
+    right: 30px;/*cirbutton右邊距離box右邊之距離值*/
+    bottom: -20px;
+    border-radius: 25px;/*設定寬高的一半圓弧*/
+  }
+.tag{/*圓圈*/
+    width: 30px;
+    height: 80px;
+    background-color: #ff7526;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+}
+.bottom{/*下半部*/
+    padding: 10px 20px 20px 20px;/*左上順時針依序的內距*/
+}
+.bottom li{
+    padding: 5px 0px;/*只有兩個數字，上下、左右*/
+}
+.bottom h3{
+    display: inline-block;/*在同一行*/
+}
+.bottom ul{
+    list-style: none;/*不要有點*/
+    padding-left: 0px;
+}
+.buttons .btn{
+    display: inline-block;/*在同一行*/
+    letter-spacing: 2px;
+    padding: 10px 25px;
+    border: solid 2px black;
+}
+.btnNews{/*.buttons .btn .btnNews*/
+    float: right;/*float為浮動位置，設定靠右*/
+    background-color: #fff
+}
+.btnNews:hover{
+    background-color: #d4d1d1;
+}
+.buttons{
+    margin-top: 30px;
+}
+
+.btnWebsite{
+    background-color: #ff7526;
+    transition: 0.2s;
+}
+.btnWebsite:hover{
+    background-color: #f29965;
+}
+/*取消系統原本設定超連結的格式*/
+a{
+    color: initial;
+    text-decoration: initial;
+}
