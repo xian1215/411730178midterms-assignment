@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>midterms assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <button class="burger" onclick="toggleMenu()"></button>
+    <div class="background"></div>
+    <div class="shade"></div>
+    <div class="menu">
+      <nav>
+        <a style="animation-delay: 0.2s" href="https://www.tku.edu.tw/" target="iframe-div">淡江大學</a>
+        <a style="animation-delay: 0.3s" href="https://www.youtube.com/embed/VHday_adXLQ?si=EDm6O0RQq2g2Vy5h" target="iframe-div">youtube教學網址</a>
+        <a style="animation-delay: 0.4s" href="https://h5p.org/h5p/embed/554805" target="iframe-div">關卡一</a>
+        <a style="animation-delay: 0.5s" href="https://h5p.org/h5p/embed/57017"  target="iframe-div">關卡二</a>
+        <a style="animation-delay: 0.6s" href="coffee/index.html"  target="iframe-div">第一單元作品</a>
+        <a style="animation-delay: 0.7s" href="20240315/index.html"  target="iframe-div">第二單元作品</a>
+        <a style="animation-delay: 0.8s" href="midterms/index.html"  target="iframe-div">期中作品</a>
+      </nav>
+    </div>
+    <div class="block"> <a style="animation-delay: 0.2s" href="index.html">回首頁</a></div>
+    <script type="text/javascript">
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+    <iframe name="iframe-div" src="" width="100%" height="100%" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Find the words"></iframe>
+  </body>
+</html>
